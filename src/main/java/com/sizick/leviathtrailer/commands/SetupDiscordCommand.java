@@ -3,9 +3,9 @@ package com.sizick.leviathtrailer.commands;
 import com.sizick.leviathtrailer.utils.setup.Informations;
 import com.sizick.leviathtrailer.utils.setup.Order;
 import com.sizick.leviathtrailer.utils.setup.Rules;
-import net.dv8tion.jda.api.entities.Guild;
-import net.dv8tion.jda.api.entities.Member;
-import net.dv8tion.jda.api.entities.Message;
+import net.dv8tion.jda.core.entities.Guild;
+import net.dv8tion.jda.core.entities.Member;
+import net.dv8tion.jda.core.entities.Message;
 
 /**
  * The MIT License (MIT)

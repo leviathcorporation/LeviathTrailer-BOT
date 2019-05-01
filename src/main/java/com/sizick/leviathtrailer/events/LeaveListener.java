@@ -1,11 +1,9 @@
 package com.sizick.leviathtrailer.events;
 
 import com.sizick.leviathtrailer.utils.Logger;
-import net.dv8tion.jda.api.EmbedBuilder;
-import net.dv8tion.jda.api.events.guild.member.GuildMemberLeaveEvent;
-import net.dv8tion.jda.api.hooks.ListenerAdapter;
-
-import javax.annotation.Nonnull;
+import net.dv8tion.jda.core.EmbedBuilder;
+import net.dv8tion.jda.core.events.guild.member.GuildMemberLeaveEvent;
+import net.dv8tion.jda.core.hooks.ListenerAdapter;
 
 /**
  * The MIT License (MIT)

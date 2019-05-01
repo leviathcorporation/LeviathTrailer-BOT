@@ -2,9 +2,8 @@ package com.sizick.leviathtrailer.commands;
 
 import com.sizick.leviathtrailer.LeviathTrailerBot;
 import com.sizick.leviathtrailer.utils.LeviathRole;
-import net.dv8tion.jda.api.MessageBuilder;
-import net.dv8tion.jda.api.entities.Member;
-import net.dv8tion.jda.api.entities.Message;
+import net.dv8tion.jda.core.entities.Member;
+import net.dv8tion.jda.core.entities.Message;
 
 /**
  * The MIT License (MIT)

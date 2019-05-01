@@ -2,12 +2,10 @@ package com.sizick.leviathtrailer.events;
 
 import com.sizick.leviathtrailer.utils.LeviathRole;
 import com.sizick.leviathtrailer.utils.Logger;
-import net.dv8tion.jda.api.EmbedBuilder;
-import net.dv8tion.jda.api.events.guild.member.GuildMemberJoinEvent;
-import net.dv8tion.jda.api.events.message.react.MessageReactionAddEvent;
-import net.dv8tion.jda.api.hooks.ListenerAdapter;
-
-import javax.annotation.Nonnull;
+import net.dv8tion.jda.core.EmbedBuilder;
+import net.dv8tion.jda.core.events.guild.member.GuildMemberJoinEvent;
+import net.dv8tion.jda.core.events.message.react.MessageReactionAddEvent;
+import net.dv8tion.jda.core.hooks.ListenerAdapter;
 
 /**
  * The MIT License (MIT)
@@ -28,7 +26,7 @@ public class JoinListener extends ListenerAdapter {
     }
 
     @Override
-    public void onMessageReactionAdd(@Nonnull MessageReactionAddEvent event) {
+    public void onMessageReactionAdd(MessageReactionAddEvent event) {
 
     }
 }

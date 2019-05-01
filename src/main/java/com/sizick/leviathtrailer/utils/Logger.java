@@ -1,7 +1,7 @@
 package com.sizick.leviathtrailer.utils;
 
 import com.sizick.leviathtrailer.LeviathTrailerBot;
-import net.dv8tion.jda.api.entities.TextChannel;
+import net.dv8tion.jda.core.entities.TextChannel;
 
 /**
  * The MIT License (MIT)

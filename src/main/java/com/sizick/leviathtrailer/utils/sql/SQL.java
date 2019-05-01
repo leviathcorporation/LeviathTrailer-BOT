@@ -27,7 +27,7 @@ public class SQL {
         this.user = username;
         this.password = password;
         url = "jdbc:mysql://" + host + "/" + database + "?user=" + user + "&password=" + password;
-        driver = ("com.mysql.jdbc.Driver");
+        driver = ("org.mariadb.jdbc.Driver");
     }
 
     public SQL(String filePath) {

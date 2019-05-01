@@ -1,11 +1,9 @@
 package com.sizick.leviathtrailer.commands;
 
 import com.sizick.leviathtrailer.utils.LeviathRole;
-import net.dv8tion.jda.api.EmbedBuilder;
-import net.dv8tion.jda.api.Permission;
-import net.dv8tion.jda.api.entities.Guild;
-import net.dv8tion.jda.api.entities.Member;
-import net.dv8tion.jda.api.entities.Message;
+import net.dv8tion.jda.core.EmbedBuilder;
+import net.dv8tion.jda.core.Permission;
+import net.dv8tion.jda.core.entities.*;
 
 /**
  * The MIT License (MIT)
@@ -39,7 +37,10 @@ public class NewCommand implements Command {
                         .setDescription("Bonjour " + member.getAsMention() + " - ceci est une réponse automatique : \n" +
                                 "S'il vous plait, veuillez nous communiquer toutes les informations de votre commande afin que nous puissions la traiter dans les plus bref délais.")
                         .setFooter("Leviath Corporation", "https://cdn.discordapp.com/attachments/294527468608552961/567413089356611584/logo_leviath_style.png");
-                textChannel.sendMessage(orderEmbed.build()).queue();
+                if(textChannel.getType() == ChannelType.TEXT) {
+                    TextChannel txt = (TextChannel) textChannel;
+                    txt.sendMessage(orderEmbed.build()).queue();
+                }
             });
 
             // On ajoute le grade Client à l'utilisateur.

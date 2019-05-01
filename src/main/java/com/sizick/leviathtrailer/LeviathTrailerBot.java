@@ -5,9 +5,11 @@ import com.sizick.leviathtrailer.events.JoinListener;
 import com.sizick.leviathtrailer.utils.OrderObject;
 import com.sizick.leviathtrailer.utils.sql.SQL;
 import com.sizick.leviathtrailer.utils.sql.SQLManager;
-import net.dv8tion.jda.api.JDA;
-import net.dv8tion.jda.api.JDABuilder;
-import net.dv8tion.jda.api.entities.Activity;
+import net.dv8tion.jda.core.JDA;
+import net.dv8tion.jda.core.JDABuilder;
+import net.dv8tion.jda.core.OnlineStatus;
+import net.dv8tion.jda.core.entities.Game;
+import net.dv8tion.jda.core.entities.MessageActivity;
 
 import javax.security.auth.login.LoginException;
 import java.util.HashMap;
@@ -40,7 +42,7 @@ public class LeviathTrailerBot {
 
         try {
             jda = new JDABuilder(token).build();
-            jda.getPresence().setActivity(Activity.streaming("leviath.fr | -help", "https://twitch.tv/SizickOfficial"));
+            jda.getPresence().setPresence(OnlineStatus.ONLINE, Game.streaming("leviath.fr | -help", "https://twitch.tv/SizickOfficial"));
 
             jda.addEventListener(new CommandsListener());
             jda.addEventListener(new JoinListener());

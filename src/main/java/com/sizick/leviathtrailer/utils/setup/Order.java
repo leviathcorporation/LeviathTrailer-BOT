@@ -1,7 +1,8 @@
 package com.sizick.leviathtrailer.utils.setup;
 
-import net.dv8tion.jda.api.EmbedBuilder;
-import net.dv8tion.jda.api.entities.TextChannel;
+
+import net.dv8tion.jda.core.EmbedBuilder;
+import net.dv8tion.jda.core.entities.TextChannel;
 
 /**
  * The MIT License (MIT)

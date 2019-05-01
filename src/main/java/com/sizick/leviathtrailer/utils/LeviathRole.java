@@ -1,7 +1,7 @@
 package com.sizick.leviathtrailer.utils;
 
 import com.sizick.leviathtrailer.LeviathTrailerBot;
-import net.dv8tion.jda.api.entities.Role;
+import net.dv8tion.jda.core.entities.Role;
 
 /**
  * The MIT License (MIT)
